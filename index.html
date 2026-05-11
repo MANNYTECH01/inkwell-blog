@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inkwell — A Modern Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#" class="nav-logo">Inkwell</a>
+      <ul class="nav-links">
+        <li><a href="#posts">Stories</a></li>
+        <li><a href="#categories">Topics</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#newsletter" class="nav-cta">Subscribe</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">Welcome to the journal</span>
+        <h1 class="hero-title">Ideas worth<br /><em>reading about.</em></h1>
+        <p class="hero-sub">Thoughtful writing on design, technology, and the creative process — curated for curious minds.</p>
+        <a href="#posts" class="btn btn-primary">Explore Stories</a>
+      </div>
+      <div class="hero-decoration" aria-hidden="true">
+        <div class="deco-circle deco-c1"></div>
+        <div class="deco-circle deco-c2"></div>
+        <div class="deco-circle deco-c3"></div>
+      </div>
+    </section>
+
+    <!-- FEATURED LABEL -->
+    <section class="section-label-row">
+      <span class="section-label">Featured Posts</span>
+      <div class="label-line"></div>
+    </section>
+
+    <!-- BLOG POSTS -->
+    <section id="posts" class="posts-grid">
+
+      <article class="post-card post-card--featured">
+        <div class="post-meta">
+          <span class="post-tag">Design</span>
+          <span class="post-date">May 8, 2026</span>
+        </div>
+        <h2 class="post-title">The Art of White Space: Why Less Really Is More</h2>
+        <p class="post-excerpt">Great designers know that emptiness is never truly empty. White space is an active ingredient — it directs the eye, creates rhythm, and lets content breathe. Here's how to wield it intentionally.</p>
+        <div class="post-footer">
+          <div class="author">
+            <div class="author-avatar av1">SA</div>
+            <span>Sofia Adeyemi</span>
+          </div>
+          <a href="#" class="btn btn-ghost">Read More →</a>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="post-tag post-tag--tech">Technology</span>
+          <span class="post-date">May 3, 2026</span>
+        </div>
+        <h2 class="post-title">Building for the Edge: What Distributed Systems Taught Me</h2>
+        <p class="post-excerpt">After three years running infrastructure at scale, I've gathered lessons no textbook covers. The network will fail. Your assumptions will be wrong. Here's what I'd tell myself on day one.</p>
+        <div class="post-footer">
+          <div class="author">
+            <div class="author-avatar av2">KO</div>
+            <span>Kofi Osei</span>
+          </div>
+          <a href="#" class="btn btn-ghost">Read More →</a>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="post-tag post-tag--creative">Creative</span>
+          <span class="post-date">Apr 27, 2026</span>
+        </div>
+        <h2 class="post-title">How Constraints Became My Greatest Creative Tool</h2>
+        <p class="post-excerpt">A blank canvas is terrifying. Limitations, paradoxically, are liberating. When I started writing one essay per week with strict rules, my best work emerged not in spite of those rules — but because of them.</p>
+        <div class="post-footer">
+          <div class="author">
+            <div class="author-avatar av3">NB</div>
+            <span>Nadia Bello</span>
+          </div>
+          <a href="#" class="btn btn-ghost">Read More →</a>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <div class="post-meta">
+          <span class="post-tag">Design</span>
+          <span class="post-date">Apr 19, 2026</span>
+        </div>
+        <h2 class="post-title">Typography That Speaks: Choosing Fonts With Purpose</h2>
+        <p class="post-excerpt">Typography is the voice behind the words. A serif whispers tradition; a geometric sans shouts modernity. Understanding what typefaces say — not just what they look like — is the key to more persuasive design.</p>
+        <div class="post-footer">
+          <div class="author">
+            <div class="author-avatar av1">SA</div>
+            <span>Sofia Adeyemi</span>
+          </div>
+          <a href="#" class="btn btn-ghost">Read More →</a>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- CATEGORIES + ABOUT SIDEBAR LAYOUT -->
+    <div class="sidebar-layout">
+
+      <!-- CATEGORIES -->
+      <section id="categories" class="categories-section">
+        <h3 class="widget-title">Browse by Topic</h3>
+        <ul class="category-list">
+          <li><a href="#" class="category-item"><span class="cat-name">Design</span><span class="cat-count">14</span></a></li>
+          <li><a href="#" class="category-item"><span class="cat-name">Technology</span><span class="cat-count">9</span></a></li>
+          <li><a href="#" class="category-item"><span class="cat-name">Creative Process</span><span class="cat-count">11</span></a></li>
+          <li><a href="#" class="category-item"><span class="cat-name">Culture</span><span class="cat-count">6</span></a></li>
+          <li><a href="#" class="category-item"><span class="cat-name">Career</span><span class="cat-count">8</span></a></li>
+        </ul>
+      </section>
+
+      <!-- RECENT POSTS -->
+      <section class="recent-section">
+        <h3 class="widget-title">Recent Posts</h3>
+        <ul class="recent-list">
+          <li class="recent-item">
+            <span class="recent-tag">Design</span>
+            <a href="#" class="recent-title">Designing for Accessibility Without Sacrificing Beauty</a>
+            <span class="recent-date">Apr 14, 2026</span>
+          </li>
+          <li class="recent-item">
+            <span class="recent-tag recent-tag--tech">Tech</span>
+            <a href="#" class="recent-title">The Hidden Cost of Technical Debt</a>
+            <span class="recent-date">Apr 9, 2026</span>
+          </li>
+          <li class="recent-item">
+            <span class="recent-tag recent-tag--creative">Creative</span>
+            <a href="#" class="recent-title">Morning Pages: A 90-Day Experiment</a>
+            <span class="recent-date">Apr 2, 2026</span>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <div class="about-inner">
+        <div class="about-text">
+          <span class="section-label">About</span>
+          <h2 class="about-title">A space for thoughtful writing.</h2>
+          <p>Inkwell is an independent blog exploring the intersection of design, technology, and human creativity. Started in 2021, it's grown into a small community of readers who care about doing thoughtful work in a noisy world.</p>
+          <p>Every post is written with care — no filler, no fluff. Just ideas that earned their place on the page.</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">48</span>
+            <span class="stat-label">Articles published</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">12k</span>
+            <span class="stat-label">Monthly readers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Years running</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Contributors</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="newsletter-section">
+      <div class="newsletter-inner">
+        <div class="nl-decoration" aria-hidden="true"></div>
+        <span class="section-label section-label--light">Newsletter</span>
+        <h2 class="nl-title">Words in your inbox,<br /><em>not your face.</em></h2>
+        <p class="nl-sub">No ads. No spam. Just one thoughtful email every two weeks with our latest stories.</p>
+        <form class="nl-form" onsubmit="return false;">
+          <input type="email" class="nl-input" placeholder="your@email.com" aria-label="Email address" />
+          <button type="submit" class="btn btn-accent">Subscribe Free</button>
+        </form>
+        <p class="nl-note">Join 4,200+ readers. Unsubscribe any time.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">Inkwell</span>
+        <p>Ideas worth reading about.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#">Stories</a>
+        <a href="#">Topics</a>
+        <a href="#">About</a>
+        <a href="#">Subscribe</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="RSS">◈</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Inkwell. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
